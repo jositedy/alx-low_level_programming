@@ -1,17 +1,26 @@
-#!/bin/bash
-#include<stdio.h>
-
-void main()
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
 {
-	int n,0;
+        int n;
 
-	if (n>0)
+        srand(time(0));
+        n = rand() - RAND_MAX / 2;
+        /* your code goes there */
+        if (n>0)
+        {
+                printf("%d is positive",n);
+        }
+        else if (n<0)
+        {
+                printf("%d is negative", n);
+        }
+        else
 	{
-		printf("\n n is greater than 0");
+		printf("%d is zero",n);
 	}
-	else if (n<0)
-	{
-		printf("\n 0 is greater than n");
-	}
-	else
-	}
+        return (0);
+}
+
+
