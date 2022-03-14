@@ -1,0 +1,1 @@
+-Wall -pedantic -Werror -Wextra -std=gnu89 7-print_tebahpla.c -o 7-print_teba
